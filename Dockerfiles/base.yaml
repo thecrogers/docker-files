@@ -1,0 +1,10 @@
+FROM centos
+
+RUN yum update -y &&  yum install -y git vim curl wget
+Run wget https://dl.google.com/go/go1.13.3.linux-amd64.tar.gz && \
+    tar -xzf go1.13.3.linux-amd64.tar.gz && \
+    mv go /usr/local
+Run wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+Run nvm install 10 && npm install -g aws-cdk && npm install -g typescript && npx npm-check-updates -u    
+
+CMD tail -f /dev/null

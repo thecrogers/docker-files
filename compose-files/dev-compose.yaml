@@ -1,0 +1,7 @@
+version: "3.3"
+services:
+  devapp:
+    image: thecrogers:1.0.1
+    command: tail -f /dev/null
+    volumes:
+        -   C:/Users/caleb/Code:/root/code
